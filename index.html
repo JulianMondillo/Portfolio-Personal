@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MiPortfolio</title>
+
+  <link rel="stylesheet" href="estilo.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header id="header">
+    <h1>Portfolio Personal</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#experiencias">Experiencia</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#redes">Redes</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+
+
+  <section id="inicio">
+    <h2>Inicio</h2>
+    <div class="cajadetexto">
+      <!-- Foto y nombre -->
+     <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Foto de perfil por defecto" class="foto-perfil">
+      <h3 class="nombre">Julián Mondillo</h3>
+
+      <p>Bienvenido a mi portfolio personal. Acá van a encontrar información sobre mí, 
+      mis experiencias y proyectos.</p>
+    </div>
+  </section>
+
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <div class="cajadetexto">
+      <p>Hola, Soy Julián Mondillo, tengo 23 años, soy estudiante de programación en la UTN de Pacheco. 
+      A su vez me interesa aprender sobre  el desarrollo de software, bases de datos y la creación de aplicaciones. Me gustaria empezar a hacer cursos para ampliar
+    mis habilidades, expandir mi conocimiento. Actualmente no tengo trabajo, ni trabajé como programador. 
+    .</p>
+
+      <p> Espero en un futuro poder conseguir un empleo en el área y seguir creciendo profesionalmente.</p>
+    </div>
+  </section>
+
+
+  <section id="experiencias">
+    <h2>Experiencia</h2>
+  <div class="cajadetexto">
+    <p>Por el momento no tengo experiencia profesional como programador, 
+    como mencioné en el apartado "sobre mi" estoy cursando la Tecnicatura Universitaria en Programación en la UTN. 
+    Durante el transcurso de la carrera desarrollé algunos proyectos en C++, C#, SQL y fortalecí conceptos de bases de datos que 
+    me permiten reforzar mi lógica de programación y el trabajo con diferentes tecnologías.</p>
+
+    <p>Mi experiencia laboral previa, en un rubro totalmente distinto (kiosquero), me dio la oportunidad de fortalecer otras cosas como
+    el trato con clientes, la responsabilidad y el compromiso. Considero que estos puntos son muy importantes en cualquier ámbito laboral y me gustaría aplicarlos aSl mundo de la programación.
+  </p>
+
+    <p>Cada proyecto en la facultad es una oportunidad para crecer, 
+    y mi objetivo es seguir creciendo en el mundo IT.</p>
+  </div>
+</section>
+  
+  
+  
+
+
+  <section id="proyectos">
+  <h2>Proyectos</h2>
+  <div class="cajadetexto">
+    <p>Estos son algunos de mis proyectos académicos y personales:</p>
+  </div>
+
+  <div class="proyectos-grid">
+    <!-- Proyecto 1 -->
+    <div class="proyecto-card">
+      <h3>Catálogo de Artículos (TP2 WinForms)</h3>
+      <p>Aplicación de escritorio en C# .NET para gestionar un catálogo de artículos, con conexión a base de datos SQL Server.</p>
+      <p><strong>Tecnologías:</strong> C#, .NET Framework, SQL Server, WinForms</p>
+      <a href="https://github.com/JulianMondillo/tp-winform-equipo-9c" target="_blank">Ver en GitHub</a>
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div class="proyecto-card">
+      <h3>PROYECTO FINAL PROGRAMACIÓN II - APP PARA LA GESTIÓN DE UNA INSTITUCIÓN EDUCATIVA.</h3>
+      <p>Este proyecto fue realizado como Trabajo Final Integrador de la materia Programación II en la UTN. Se trata de una aplicación de consola en C++,
+         desarrollada de forma grupal, que gestiona los datos de una institución educativa</p>
+      <p><strong>Tecnologías:</strong> C++</p>
+      <a href="https://github.com/JulianMondillo/TPFI_PII_UTN" target="_blank">Ver en GitHub</a>
+    </div>
+
+    
+  
+</section>
+
+
+<section id="redes">
+  <h2>Redes</h2>
+  <div class="cajadetexto">
+    <p>Puedes encontrarme en las siguientes redes sociales:</p>
+    <ul class="redes-lista">
+      <li>
+        <a href="https://www.linkedin.com/in/juli-mondillo-2246851ba/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="icono-red">
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/JulianMondillo" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" class="icono-red">
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/julianmondillo/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="icono-red">
+          Instagram
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/julitooh.mondillo" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="icono-red">
+          Facebook
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+  <section id="contacto">
+  <h2>Contacto</h2>
+  <div class="cajadetexto">
+    <form id="contact-form">
+      <div class="form-grupo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+      </div>
+
+      <div class="form-grupo">
+        <label for="email">Correo</label>
+        <input type="email" id="email" name="email" placeholder="tunombre@ejemplo.com" required>
+      </div>
+
+      <div class="form-grupo">
+        <label for="asunto">Asunto (opcional)</label>
+        <input type="text" id="asunto" name="asunto" placeholder="Consulta, propuesta, etc.">
+      </div>
+
+      <div class="form-grupo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje..." required></textarea>
+      </div>
+
+    
+
+      <button type="submit" class="btn-enviar">Enviar</button>
+
+      <p id="contacto-estado" class="estado" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</body>
+</html>
