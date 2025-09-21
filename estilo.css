@@ -13,13 +13,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: background 1s;
+  
   
 }
 
-header.scrolled {
-  background: #333;
-}
 
 header h1 {
   color: white;
@@ -72,6 +69,13 @@ section {
   min-height:100vh;
 }
 
+#conocimientos { 
+  background: url("https://i0.wp.com/static.vecteezy.com/system/resources/previews/001/311/814/non_2x/programming-and-coding-concept-vector.jpg?w=1290&ssl=1")
+   center / cover fixed no-repeat;
+  color:white;
+  min-height:100vh;
+}
+
 #contacto { background: black; color: white;}
 
 .cajadetexto {
@@ -87,7 +91,6 @@ section {
   
 }
 
-/* Foto y nombre en inicio */
 .foto-perfil {
   width: 150px;
   height: 150px;
@@ -105,7 +108,6 @@ section {
   font-weight: bold;
 }
 
-/* ===== Formulario de contacto ===== */
 .form-grupo {
   display: grid;
   gap: 6px;
@@ -222,3 +224,19 @@ textarea:focus {
   height: 24px;
   margin-right: 8px;
 }
+
+.conocimientos-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 30px;
+  padding: 20px;
+}
+
+.conocimientos-grid img {
+  width: 80px;  
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
