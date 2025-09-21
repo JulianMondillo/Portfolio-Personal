@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 1s;
+  
+}
+
+header.scrolled {
+  background: #333;
+}
+
+header h1 {
+  color: white;
+    margin: 0;
+}
+
+nav {
+  margin-right: 40px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+section {
+  height: 100vh;
+  padding: 50px;
+}
+
+#inicio{
+ 
+  background: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80")
+   center / cover fixed no-repeat;
+  color:white;
+  min-height:100vh;
+}
+
+#sobre-mi { background: black;color: white; }
+
+#experiencias { background: url("https://png.pngtree.com/thumb_back/fw800/background/20230705/pngtree-3d-rendered-black-screen-with-blue-programming-code-lines-image_3803401.jpg")
+   center / cover fixed no-repeat;
+  color:white;
+  min-height:100vh;}
+#redes{
+ 
+  background: url("https://cdn-nv.mo.cloudinary.net/media/uploads/2021/11/social-media-icons-logos-applications-mobile-phone-screen-3d-1200x630.jpg")
+   center / cover fixed no-repeat;
+  color:white;
+
+  min-height:100vh;
+}
+#proyectos{
+ 
+  background: url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1920&q=80")
+   center / cover fixed no-repeat;
+  color:white;
+  min-height:100vh;
+}
+
+#contacto { background: black; color: white;}
+
+.cajadetexto {
+  background: white;
+  color: black;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 70px;
+  max-width: 700px;
+  margin: 25px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-size: 1.8em;
+  
+}
+
+/* Foto y nombre en inicio */
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 15px;
+  border: 3px solid #333;
+}
+
+.nombre {
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/* ===== Formulario de contacto ===== */
+.form-grupo {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.form-grupo label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #555;
+}
+
+.btn-enviar {
+  display: inline-block;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+}
+
+.btn-enviar:hover {
+  opacity: 0.9;
+}
+
+
+.estado {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.proyecto-card {
+  background: white;
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.proyecto-card h3 {
+  margin-top: 0;
+  color: #222;
+  font-size: 2em;
+}
+
+.proyecto-card p {
+  font-size: 1.5em;
+  
+  color: black
+  
+}
+
+.proyecto-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.proyecto-card a:hover {
+  text-decoration: underline;
+}
+
+.redes-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.redes-lista li {
+  margin: 10px 0;
+}
+
+.redes-lista a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.redes-lista a:hover {
+  text-decoration: underline;
+}
+
+.icono-red {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
